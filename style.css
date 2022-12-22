@@ -12,6 +12,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Amatic SC', cursive;
+  text-align: center;
 }
 
 h1 {
@@ -74,7 +75,18 @@ h1 {
   font-size: 30px;
   color: white;
   font-family: 'Amatic SC', cursive;
-  margin: 80px 39%;
+  margin-top: 80px;
   border-radius: 8px;
   background-color: #754C03;
+}
+
+@media (max-width: 600px) {
+ 
+  body {
+    margin: 30vh;
+  }
+  .game {
+    width: 400px;
+    height: 300px;
+  }
 }
