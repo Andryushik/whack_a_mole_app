@@ -16,7 +16,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 10rem;
+  font-size: 8rem;
   line-height: 1;
   margin-bottom: 0;
 }
@@ -30,7 +30,7 @@ h1 {
 
 .game {
   width: 600px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -69,13 +69,12 @@ h1 {
 }
 
 #start {
-  width: 30%;
-  height: 50px;
+  padding: 10px 20px;
   font-weight: bold;
   font-size: 30px;
   color: white;
   font-family: 'Amatic SC', cursive;
-  margin: 70px 35%;
+  margin: 80px 39%;
   border-radius: 8px;
   background-color: #754C03;
 }
