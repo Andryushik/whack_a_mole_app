@@ -69,6 +69,12 @@ h1 {
   top: 0;
 }
 
+#start-level {
+  display: flex;
+  justify-content: center;
+  
+}
+
 #start, 
 #select-level {
   padding: 10px 20px;
@@ -76,7 +82,7 @@ h1 {
   font-size: 30px;
   color: white;
   font-family: 'Amatic SC', cursive;
-  margin-top: 80px;
+  margin: 80px 5px;
   border-radius: 8px;
   background-color: #754C03;
 }
@@ -94,6 +100,7 @@ h1 {
   }
   #start, 
   #select-level {
-  margin-top: 50px;
+  margin: 50px 5px;
+  font-size: 20px;
 }
 }
