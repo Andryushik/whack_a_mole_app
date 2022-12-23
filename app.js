@@ -2,6 +2,7 @@ const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
 const startBtn = document.querySelector('#start');
+const level = document.querySelector('#select-level');
 let lastHole;
 let timeUp = true;
 let score = 0;
@@ -19,16 +20,16 @@ function randomHole(holes) {
   return holes[holeId];
 }
 
-function peep() {
-  const time = randomTime(300, 1200);
+function peep(minT, maxT) {
+  const time = randomTime(minT, maxT);
   const hole = randomHole(holes);
   hole.classList.add('up');
   setTimeout(() => {
     hole.classList.remove('up');
     if (!timeUp) {
-      peep();
+      peep(minT, maxT);
     } else {
-      alert(`Time UP! Your score is ${score}.
+      alert(`Time's UP! Your score is ${score}.
       
       GAME OVER...`);
     }
@@ -46,7 +47,15 @@ function startGame() {
   scoreBoard.textContent = 0;
   timeUp = false;
   score = 0;
-  peep();
+  const selectedLevel = level.options[level.selectedIndex].value;
+
+  if (selectedLevel == 3) {
+    peep(100, 700);
+  } else if (selectedLevel == 2) {
+    peep(200, 900);
+  } else {
+    peep(300, 1200);
+  }
   setTimeout(() => (timeUp = true), 20000);
 }
 
