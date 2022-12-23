@@ -92,4 +92,8 @@ h1 {
   h1 {
     font-size: 5rem;
   }
+  #start, 
+  #select-level {
+  margin-top: 50px;
+}
 }
