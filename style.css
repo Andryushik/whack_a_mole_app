@@ -80,13 +80,15 @@ h1 {
   background-color: #754C03;
 }
 
-@media (max-width: 600px) {
- 
-  body {
-    margin: 30vh;
-  }
+@media screen and (max-width: 600px) {
   .game {
-    width: 400px;
-    height: 300px;
+    width: 390px;
+    height: 600px;
+  }
+  .hole {
+    flex: 1 0 50%;
+  }
+  h1 {
+    font-size: 5rem;
   }
 }
